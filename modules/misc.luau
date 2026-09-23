@@ -226,7 +226,7 @@ libmisc.WebSocket.connect = function(...)
 end
 libmisc.getidentity = function(...)
     local exec = libmisc.identifyexecutor()
-    if exec:lower():find("solara") do
+    if exec:lower():find("solara") then
       return 3
     end
     assert(type(findit("getidentity")) == "function","not exixts getidentity")
@@ -234,7 +234,7 @@ libmisc.getidentity = function(...)
 end
 libmisc.printidentity = function(...)
     local exec = libmisc.identifyexecutor()
-    if exec:lower():find("solara") do
+    if exec:lower():find("solara") then
       return print("Current identity is 3")
     end
     assert(type(findit("printidentity")) == "function","not exixts printidentity")
