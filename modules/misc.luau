@@ -12,6 +12,7 @@ libmisc.gethui = function()
     return hui()
   end
 end
+local BASE64_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
 libmisc.base64decode = function(data)
     data = data:gsub("[^" .. BASE64_CHARS .. "=]", "")
 
