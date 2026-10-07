@@ -120,7 +120,7 @@ libmisc.getnilinstances = function(...)
     return findit("getnilinstances")(...)
 end
 libmisc.getnamecallmethod = function(...)
-if libmisc.getidentity() < 7 then
+if libmisc.getidentity() < 8 then
       return error("your executor cant support hooking")
     end
     assert(type(findit("getnamecallmethod")) == "function","not exixts getnamecallmethod")
@@ -128,28 +128,28 @@ if libmisc.getidentity() < 7 then
 end
 
 libmisc.getrawmetatable = function(...)
-if libmisc.getidentity() < 7 then
+if libmisc.getidentity() < 8 then
       return error("your executor cant support hooking")
     end
     assert(type(findit("getrawmetatable")) == "function","not exixts getrawmetatable")
     return findit("getrawmetatable")(...)
 end
 libmisc.isreadonly = function(...)
-if libmisc.getidentity() < 7 then
+if libmisc.getidentity() < 8 then
       return error("your executor cant support hooking")
     end
     assert(type(findit("isreadonly")) == "function","not exixts isreadonly")
     return findit("isreadonly")(...)
 end
 libmisc.setrawmetatable = function(...)
-if libmisc.getidentity() < 7 then
+if libmisc.getidentity() < 8 then
       return error("your executor cant support hooking")
     end
     assert(type(findit("setrawmetatable")) == "function","not exixts setrawmetatable")
     return findit("setrawmetatable")(...)
 end
 libmisc.setreadonly = function(...)
-if libmisc.getidentity() < 7 then
+if libmisc.getidentity() < 8 then
       return error("your executor cant support hooking")
     end
     assert(type(findit("setreadonly")) == "function","not exixts setreadonly")
@@ -165,14 +165,14 @@ libmisc.request = function(...)
 end
 
 libmisc.gethiddenproperty = function(...)
-if libmisc.getidentity() < 7 then
+if libmisc.getidentity() < 8 then
       return error("your executor cant support hooking")
     end
     assert(type(findit("gethiddenproperty")) == "function","not exixts gethiddenproperty")
     return findit("gethiddenproperty")(...)
 end
 libmisc.getthreadidentity = function(...)
-if libmisc.getidentity() < 7 then
+if libmisc.getidentity() < 8 then
       return error("your executor cant support hooking")
     end
     assert(type(findit("getthreadidentity")) == "function","not exixts getthreadidentity")
@@ -183,7 +183,7 @@ libmisc.isscriptable = function(...)
     return findit("isscriptable")(...)
 end
 libmisc.sethiddenproperty = function(...)
-if libmisc.getidentity() < 7 then
+if libmisc.getidentity() < 8 then
       return error("your executor cant support hooking")
     end
     assert(type(findit("sethiddenproperty")) == "function","not exixts sethiddenproperty")
@@ -194,7 +194,7 @@ libmisc.setscriptable = function(...)
     return findit("setscriptable")(...)
 end
 libmisc.setthreadidentity = function(...)
-if libmisc.getidentity() < 7 then
+if libmisc.getidentity() < 8 then
       return error("your executor cant support hooking")
     end
     assert(type(findit("setthreadidentity")) == "function","not exixts setthreadidentity")
@@ -206,7 +206,7 @@ libmisc.getcallingscript = function(...)
     return findit("getcallingscript")(...)
 end
 libmisc.getloadedmodules = function(...)
-if libmisc.getidentity() < 7 then
+if libmisc.getidentity() < 8 then
       return error("your executor cant support hooking")
     end
     assert(type(findit("getloadedmodules")) == "function","not exixts getloadedmodules")
@@ -234,7 +234,7 @@ libmisc.getscripts = function(...)
     return findit("getscripts")(...)
 end
 libmisc.firesignal = function(...)
-    if libmisc.getidentity() < 7 then
+    if libmisc.getidentity() < 8 then
       return error("your executor cant support hooking")
     end
     assert(type(findit("firesignal")) == "function","not exixts firesignal")
